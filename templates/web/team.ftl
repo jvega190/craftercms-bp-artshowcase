@@ -1,6 +1,6 @@
 <#import "/templates/system/common/crafter.ftl" as crafter />
 
-<div class="container">
+<@crafter.div class="container">
   <div class="main_team_content wow fadeInUp">
     <@crafter.div $field="teammates_o" class="row repeating-container">
       <#list (contentModel.teammates_o.item)![] as teammate>
@@ -15,4 +15,4 @@
       </#list>
     </@crafter.div>
   </div>
-</div>
+</@crafter.div>

@@ -2,7 +2,8 @@
 <#import "/templates/web/common/macros.ftl" as theme />
 
 <#assign sectionId><@theme.internalNameToID name=contentModel.navigationName_t /></#assign>
-<section class="scroll-section" <#if (contentModel.navigationName_t)??>id="${sectionId}"</#if>>
+<#assign sectionId = (contentModel.navigationName_t?exists)?then(sectionId, '')>
+<@crafter.section class="scroll-section" id=sectionId>
   <#if contentModel.backgroundVideo_s?? && (contentModel.backgroundVideo_s?length>0) >
     <div class="fullscreen-bg">
       <@crafter.video $field="backgroundVideo_s" playsinline="true" autoplay="true" muted="true" loop="true">
@@ -23,4 +24,4 @@
       </div>
     </div>
   </div>
-</section>
+</@crafter.section>

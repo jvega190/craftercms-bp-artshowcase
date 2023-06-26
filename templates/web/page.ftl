@@ -83,14 +83,7 @@
     </div>
 
       <#-- Print each section -->
-    <@crafter.div $field="sectionComponents_o">
-      <#list (contentModel.sectionComponents_o.item)![] as section>
-        <#assign index = section?index />
-        <@crafter.div $field="sectionComponents_o" $index=index>
-          <@renderComponent component=section />
-        </@crafter.div>
-      </#list>
-    </@crafter.div>
+    <@crafter.renderComponentCollection $field="sectionComponents_o" />
 
     <!-- Contact Section -->
     <section id="contactus" class="contactus colorsbg">

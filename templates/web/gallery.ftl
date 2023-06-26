@@ -1,6 +1,6 @@
 <#import "/templates/system/common/crafter.ftl" as crafter />
 
-<div class="container">
+<@crafter.div class="container">
   <div class="grid-sizer"></div>
   <#if contentModel.gallery_o?? && contentModel.gallery_o.item??>
     <@crafter.div $field="gallery_o">
@@ -16,4 +16,4 @@
       </#list>
     </@crafter.div>
   </#if>
-</div>
+</@crafter.div>

@@ -1,6 +1,6 @@
 <#import "/templates/system/common/crafter.ftl" as crafter />
 
-<div class="container about_content center wow fadeInUp" data-wow-duration="700ms">
+<@crafter.div class="container about_content center wow fadeInUp" $attributes={'data-wow-duration': '700ms'}>
   <@crafter.div $field="features" class="row repeating-container">
     <#list (contentModel.features.item)![] as feature>
       <#assign index = feature?index>
@@ -27,4 +27,4 @@
       </#if>
     </#list>
   </@crafter.div>
-</div>
+</@crafter.div>

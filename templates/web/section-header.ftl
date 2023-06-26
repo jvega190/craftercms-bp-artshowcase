@@ -1,6 +1,6 @@
 <#import "/templates/system/common/crafter.ftl" as crafter />
 
-<div class="container">
+<@crafter.div class="container">
   <div class="head_title m-y-3  wow fadeInUp">
     <div class="row">
       <div class="col-md-4">
@@ -20,4 +20,4 @@
       </div>
     </div>
   </div>
-</div>
+</@crafter.div>

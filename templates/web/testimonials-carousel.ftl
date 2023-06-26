@@ -1,6 +1,6 @@
 <#import "/templates/system/common/crafter.ftl" as crafter />
 
-<div class="carousel-container text-center p-y-3 m-b-3">
+<@crafter.div class="carousel-container text-center p-y-3 m-b-3">
 
   <@crafter.renderRepeatGroup
     $field="testimonials_o"
@@ -21,4 +21,4 @@
     </p>
 
   </@crafter.renderRepeatGroup>
-</div>
+</@crafter.div>
